@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Pavo Webpage Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="images/favicon.png" />
+</head>
+<body class="scroll-smooth bg-white text-gray-800">
+
+    <nav id="navbar" class="fixed w-full bg-transparent z-50 transition-colors duration-300">
+        <div class="container mx-auto flex items-center justify-between p-4 lg:w-4/5">
+            <a href="#" class="flex items-center">
+                <img src="images/logo.svg" alt="Logo" class="h-8" />
+            </a>
+            <button class="block lg:hidden text-gray-600 focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div class="hidden lg:flex space-x-4" id="desktop-menu">
+                <a href="#header" class="text-indigo-600 hover:text-indigo-800 transition">Home</a>
+                <a href="#features" class="text-gray-600 hover:text-gray-800 transition">Features</a>
+                <a href="#details" class="text-gray-600 hover:text-gray-800 transition">Details</a>
+                <a href="#pricing" class="text-gray-600 hover:text-gray-800 transition">Pricing</a>
+                <a href="#download" class="text-gray-600 hover:text-gray-800 transition">Download</a>
+            </div>
+        </div>
+        <div class="lg:hidden hidden bg-white shadow w-full flex justify-end" id="mobile-menu">
+            <div class="container mx-auto p-4 text-right">
+                <a href="#header" class="block text-indigo-600 hover:text-indigo-800 transition py-2">Home</a>
+                <a href="#features" class="block text-gray-600 hover:text-gray-800 transition py-2">Features</a>
+                <a href="#details" class="block text-gray-600 hover:text-gray-800 transition py-2">Details</a>
+                <a href="#pricing" class="block text-gray-600 hover:text-gray-800 transition py-2">Pricing</a>
+                <a href="#download" class="block text-gray-600 hover:text-gray-800 transition py-2">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header" class="bg-gray-100 pt-24 pb-14 bg-gradient-to-b from-blue-200 via-blue-100 to-white">
+        <div class="container mx-auto px-4 text-center lg:text-left lg:flex lg:items-center lg:justify-center lg:w-4/5">
+            <div class="mb-10 lg:mb-0 lg:w-1/2">
+                <h1 class="text-5xl font-bold mb-4">Team management mobile application</h1>
+                <p class="text-lg text-gray-600 mb-8 pr-8">Start getting things done together with your team based on Pavo's revolutionary team management features</p>
+                <div class="lg:block flex justify-center items-center">
+                    <a href="#download" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-800 transition">Download for iOS</a>
+                    <a href="#download" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-800 transition ml-2">Download for Android</a>
+                </div>
+            </div>
+            <img src="images/header-smartphone.png" alt="alternative" class="mx-auto lg:mx-0 lg:w-1/2 lg:max-w-md">
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center lg:w-3/4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-blue-50 hover:bg-blue-100 transition duration-300 cursor-pointer p-12 rounded-lg shadow-lg">
+                    <img src="images/features-icon-1.svg" alt="Platform Integration" class="feature-icon mx-auto h-14">
+                    <h3 class="text-xl font-bold my-4">Platform Integration</h3>
+                    <p class="text-gray-500 text-base">Your sales force can use the app on any smartphone platform without compatibility issues.</p>
+                </div>
+                <div class="bg-blue-50 hover:bg-blue-100 transition duration-300 cursor-pointer p-12 rounded-lg shadow-lg">
+                    <img src="images/features-icon-2.svg" alt="Easy On Resources" class="feature-icon mx-auto h-14">
+                    <h3 class="text-xl font-bold my-4">Easy On Resources</h3>
+                    <p class="text-gray-500 text-base">Works smoothly even on older generation hardware due to our optimization efforts.</p>
+                </div>
+                <div class="bg-blue-50 hover:bg-blue-100 transition duration-300 cursor-pointer p-12 rounded-lg shadow-lg">
+                    <img src="images/features-icon-3.svg" alt="Great Performance" class="feature-icon mx-auto h-14">
+                    <h3 class="text-xl font-bold my-4">Great Performance</h3>
+                    <p class="text-gray-500 text-base">Optimized code and innovative technology ensure no delays and ultra-fast responsiveness.</p>
+                </div>
+                <div class="bg-blue-50 hover:bg-blue-100 transition duration-300 cursor-pointer p-12 rounded-lg shadow-lg">
+                    <img src="images/features-icon-4.svg" alt="Multiple Languages" class="feature-icon mx-auto h-14">
+                    <h3 class="text-xl font-bold my-4">Multiple Languages</h3>
+                    <p class="text-gray-500 text-base">Choose from one of the 40 languages that come pre-installed and start selling smarter.</p>
+                </div>
+                <div class="bg-blue-50 hover:bg-blue-100 transition duration-300 cursor-pointer p-12 rounded-lg shadow-lg">
+                    <img src="images/features-icon-5.svg" alt="Free Updates" class="feature-icon mx-auto h-14">
+                    <h3 class="text-xl font-bold my-4">Free Updates</h3>
+                    <p class="text-gray-500 text-base">Don't worry about future costs, pay once and receive all future updates at no extra cost.</p>
+                </div>
+                <div class="bg-blue-50 hover:bg-blue-100 transition duration-300 cursor-pointer p-12 rounded-lg shadow-lg">
+                    <img src="images/features-icon-6.svg" alt="Community Support" class="feature-icon mx-auto h-14">
+                    <h3 class="text-xl font-bold my-4">Community Support</h3>
+                    <p class="text-gray-500 text-base">Register the app and get access to knowledge and ideas from the Pavo online community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details 1 -->
+    <section id="details" class="py-16">
+        <div class="container mx-auto px-4 lg:w-3/4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 items-center">
+                <div class="lg:order-1 order-1 lg:max-w-md sm:mx-auto">
+                    <h2 class="text-4xl font-bold mb-4 text-gray-900">Results driven ground breaking technology</h2>
+                    <p class="text-gray-600 mb-4">Based on our team's extensive experience in developing line of business applications and constructive customer feedback we reached a new level of revenue.</p>
+                    <p class="text-gray-600">We enjoy helping small and medium sized tech businesses take a shot at established Fortune 500 companies.</p>
+                </div>
+                <img src="images/details-1.jpg" alt="Results" class="rounded-lg shadow-lg order-1">
+            </div>
+        </div>
+    </section>
+
+    <!-- Details 2 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 lg:w-3/4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 items-center">
+                <img src="images/details-2.jpg" alt="marketing department" class="rounded-lg shadow-lg">
+                <div class="">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-900">Instant results for the marketing department</h2>
+                    <ul class="mx-10 list-inside list-disc text-gray-600 mb-6">
+                        <li>Features that will help you and your marketers</li>
+                        <li>Smooth learning curve due to the knowledge base</li>
+                        <li>Ready out-of-the-box with minor setup settings</li>
+                    </ul>
+                    <div class="flex lg:block items-center justify-center">
+                        <a href="#download" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-800 transition">Download</a>
+                        <a href="#" class="bg-white border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-600 hover:text-white transition ml-2">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details 3 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 lg:w-3/4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+                <div class="lg:max-w-md">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-900">Platform integration and life time free updates</h2>
+                    <p class="text-gray-600 mb-4">Get a glimpse of what this app can do for your marketing automation and understand why current users are so excited when using Pavo together with their teams.</p>
+                    <p class="text-gray-600">We will promptly answer any questions and honor your requests based on the service level agreement.</p>
+                </div>
+                <img src="images/details-3.jpg" alt="free updates" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center lg:w-3/4">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div>
+                    <div class="text-5xl font-bold text-indigo-600">231</div>
+                    <p class="text-gray-600">Happy Users</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-indigo-600">385</div>
+                    <p class="text-gray-600">Issues Solved</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-indigo-600">159</div>
+                    <p class="text-gray-600">Good Reviews</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-indigo-600">127</div>
+                    <p class="text-gray-600">Case Studies</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-indigo-600">211</div>
+                    <p class="text-gray-600">Orders Received</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pt-16 pb-20 bg-gray-50 bg-[url('images/pricing-background.jpg')] bg-cover bg-no-repeat">
+        <div class="container mx-auto text-center lg:w-3/4">
+            <h2 class="text-4xl font-bold mb-10 text-gray-200">Pricing options for all budgets</h2>
+            <p class="mb-12 mx-auto max-w-2xl text-gray-400">Our pricing plans are setup in such a way that any user can start enjoying Pavo without worrying so much about costs. They are flexible and work for any type of industry.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg p-8">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">STANDARD</h3>
+                    <div class="text-4xl font-bold mb-2">$29<span class="text-lg font-normal">/mo</span></div>
+                    <p class="text-gray-600 mb-8">This basic package covers the marketing needs of small startups</p>
+                    <ul class="text-left mb-8 space-y-2">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">List building and relations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">Seamless platform integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">Great performance on devices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">Community support and videos</span>
+                        </li>
+                    </ul>
+                    <a href="#download" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-800 ">download</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-8">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">ADVANCED</h3>
+                    <div class="text-4xl font-bold mb-2">$39<span class="text-lg font-normal">/mo</span></div>
+                    <p class="text-gray-600 mb-8">This is a more advanced package suited for medium companies</p>
+                    <ul class="text-left mb-8 space-y-2">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">List building and relations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">Seamless platform integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">Great performance on devices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">Community support and videos</span>
+                        </li>
+                    </ul>
+                    <a href="#download" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-800 transition">Download</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-8">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">COMPLETE</h3>
+                    <div class="text-4xl font-bold mb-2">$49<span class="text-lg font-normal">/mo</span></div>
+                    <p class="text-gray-600 mb-8">This is a comprehensive package designed for big organizations</p>
+                    <ul class="text-left mb-8 space-y-2">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">List building and relations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">Seamless platform integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">Great performance on devices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            <span class="ml-3 text-gray-600">Community support and videos</span>
+                        </li>
+                    </ul>
+                    <a href="#download" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-800 transition">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Conclusion -->
+    <section id="download" class="py-16 bg-white ">
+        <div class="container mx-auto px-4 text-center lg:w-3/4">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900">Download the Pavo App</h2>
+            <p class="text-gray-600 mb-6">Team management mobile applications don’t get much better than Pavo. Download it today!</p>
+            <div class="flex justify-center items-center">
+                <a href="#download" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-800 transition">Download for iOS</a>
+                <a href="#download" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-800 transition ml-2">Download for Android</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-gradient-to-b from-white via-blue-100 to-blue-200 text-center py-12">
+        <div class="container lg:w-3/4 mx-auto px-4 flex items-center justify-center flex-col">
+            <p class="mb-6 text-gray-800 text-xl font-bold">Pavo is a mobile application for marketing automation and you can reach the team at <a href="mailto:email@domain.com" class="text-blue-600 hover:underline">email@domain.com</a></p>
+            <div class="mb-6 flex justify-center space-x-4">
+                <!-- Facebook SVG with Hover Effect -->
+                <a href="#" class="relative w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-blue-200 hover:text-white transition">
+                    <img src="images/socials/facebook.svg" alt="Facebook" class="w-6 h-6">
+                </a>
+
+                <!-- Twitter (X) SVG with Hover Effect -->
+                <a href="#" class="relative w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-blue-200 hover:text-white transition">
+                    <img src="images/socials/x.svg" alt="Twitter" class="w-6 h-6">
+                </a>
+
+                <!-- Pinterest SVG with Hover Effect -->
+                <a href="#" class="relative w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-blue-200 hover:text-white transition">
+                    <img src="images/socials/pintrest.svg" alt="Pinterest" class="w-6 h-6">
+                </a>
+
+                <!-- Instagram SVG with Hover Effect -->
+                <a href="#" class="relative w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-blue-200 hover:text-white transition">
+                    <img src="images/socials/instagram.svg" alt="Instagram" class="w-6 h-6">
+                </a>
+
+                <!-- YouTube SVG with Hover Effect -->
+                <a href="#" class="relative w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-blue-200 hover:text-white transition">
+                    <img src="images/socials/youtube.svg" alt="YouTube" class="w-6 h-6">
+                </a>
+            </div>
+            <div class="mt-6 flex justify-center space-x-4 text-gray-600">
+                <a href="#header" class="hover:text-gray-900 transition">Home</a>
+                <a href="#features" class="hover:text-gray-900 transition">Features</a>
+                <a href="#details" class="hover:text-gray-900 transition">Details</a>
+                <a href="#pricing" class="hover:text-gray-900 transition">Pricing</a>
+                <a href="#download" class="hover:text-gray-900 transition">Download</a>
+            </div>
+            <div class="mt-4 text-gray-600">
+                <p>&copy; 2024 <span class="hover:text-gray-900 transition">NextGen Coding</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
